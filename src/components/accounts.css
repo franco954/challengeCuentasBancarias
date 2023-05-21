@@ -1,0 +1,43 @@
+.homepage-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .account-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Organiza en 3 columnas */
+    gap: 20px; /* Espacio entre las cuentas */
+  }
+  
+  .account-item {
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Transición de color de fondo */
+    background-color: #f7f7f7;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .account-item:hover {
+    background-color: #e0e0e0; /* Cambia el color de fondo en el hover */
+  }
+  
+  .account-type {
+    font-size: 18px;
+    color: #4c4c4c;
+    margin-bottom: 10px;
+  }
+  
+  .account-number {
+    font-size: 14px;
+    color: #9c9c9c;
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media (max-width: 768px) {
+    .account-list {
+      grid-template-columns: 1fr; /* Cambia a una sola columna */
+    }
+  }
+  
